@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.Chaitaly">
+
+    <TableView fx:id="busScheduleTable" layoutX="50.0" layoutY="50.0" prefHeight="269.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="busIdColumn" prefWidth="97.79999160766602" text="Bus ID" />
+            <TableColumn fx:id="upScheduleColumn" prefWidth="86.0" text="Up Schedule" />
+            <TableColumn fx:id="downScheduleColumn" onEditCommit="#busIdEdit" prefWidth="92.99998474121094" text="Down Schedule" />
+            <TableColumn fx:id="startingPositionColumn" prefWidth="131.199951171875" text="Starting Position" />
+            <TableColumn fx:id="endingPositionColumn" prefWidth="131.0" text="Ending Position" />
+        </columns>
+    </TableView>
+
+    <Button fx:id="addScheduleButton" layoutX="411.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleAddScheduleButton" prefHeight="26.0" prefWidth="110.0" text="Add Schedule" />
+    <Button fx:id="deleteScheduleButton" layoutX="411.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleDeleteScheduleButton" prefHeight="26.0" prefWidth="110.0" text="Delete Schedule" />
+    <Button fx:id="exitButton" layoutX="544.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleExitButton" prefHeight="26.0" prefWidth="41.0" text="Exit" />
+
+    <TextField fx:id="busIdField" layoutX="50.0" layoutY="342.0" prefHeight="25.0" prefWidth="100.0" promptText="Bus ID" />
+    <TextField fx:id="upScheduleField" layoutX="161.0" layoutY="329.0" prefHeight="26.0" prefWidth="100.0" promptText="Up Schedule" />
+    <TextField fx:id="downScheduleField" layoutX="161.0" layoutY="360.0" prefHeight="26.0" prefWidth="100.0" promptText="Down Schedule" />
+    <TextField fx:id="startingPosField" layoutX="274.0" layoutY="329.0" prefHeight="26.0" prefWidth="110.0" promptText="Starting Position" />
+    <TextField fx:id="endingPosField" layoutX="274.0" layoutY="360.0" prefHeight="26.0" prefWidth="110.0" promptText="Ending Position" />
+    <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="11.0" prefHeight="18.0" prefWidth="100.0" text="Chaitaly">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font>
+    </Label>
+</AnchorPane>
