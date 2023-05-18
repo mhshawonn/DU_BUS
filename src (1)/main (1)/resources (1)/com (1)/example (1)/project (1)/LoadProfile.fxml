@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.LoadProfile">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="47.0" prefWidth="600.0" style="-fx-background-color: #92AFF7;">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="9.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/back.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="back" layoutX="36.0" layoutY="10.0" mnemonicParsing="false" onAction="#prev" text="Back" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="22.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/updateprofile.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label1" layoutX="234.0" layoutY="81.0" onDragDetected="#animateLabel" onDragDone="#animateLabel" onDragEntered="#animateLabel" onMouseClicked="#animateLabel" onMouseDragEntered="#animateLabel" onMouseEntered="#animateLabel3" onMouseMoved="#animateLabel" onScroll="#animateLabel" onTouchMoved="#animateLabel" text="TO UPDATE YOUR INFORMATION">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="234.0" layoutY="108.0" text="INPUT YOUR INFORMATION">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="150.0" text="EMAIL">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTextField" layoutX="234.0" layoutY="175.0" promptText="EMAIL" />
+      <Label layoutX="244.0" layoutY="209.0" text="NAME">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" layoutX="234.0" layoutY="237.0" promptText="NAME" />
+      <Label layoutX="244.0" layoutY="273.0" text="AGE">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ageTextField" layoutX="234.0" layoutY="298.0" promptText="AGE" />
+      <Button fx:id="load" layoutX="332.0" layoutY="339.0" mnemonicParsing="false" onAction="#saveUserProfile" text="UPDATE" />
+      <Label fx:id="label3" layoutX="130.0" layoutY="343.0" onDragDetected="#animateLabel3" onDragDone="#animateLabel3" onInputMethodTextChanged="#animateLabel3" onKeyPressed="#animateLabel3" onMouseClicked="#animateLabel3" onMouseMoved="#animateLabel3" onTouchMoved="#animateLabel3" text="TO UPADATE INFORMATION">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="27.0" fitWidth="139.0" layoutX="302.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true" rotate="100.0">
+         <image>
+            <Image url="@Images/kindpng_51855.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

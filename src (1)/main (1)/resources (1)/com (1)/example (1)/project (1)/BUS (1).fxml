@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.BUS">
+   <children>
+      <AnchorPane prefHeight="41.0" prefWidth="602.0" style="-fx-background-color: #725BF6;">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="36.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/dash.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="home" layoutX="48.0" layoutY="8.0" mnemonicParsing="false" onAction="#Home" prefHeight="25.0" prefWidth="55.0" text="Home">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="exitButton" layoutX="533.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleExitButton" prefHeight="30.0" prefWidth="55.0" text="Exit">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="525.0" layoutY="361.0" mnemonicParsing="false" text="NEXT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="isha" layoutX="90.0" layoutY="103.0" mnemonicParsing="false" onAction="#Isha" prefHeight="26.0" prefWidth="90.0" text="ISHA KHA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="khonika" layoutX="90.0" layoutY="157.0" mnemonicParsing="false" onAction="#Khonika" prefHeight="26.0" prefWidth="90.0" text="KHONIKA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="chaitaly" layoutX="90.0" layoutY="210.0" mnemonicParsing="false" onAction="#chaitaly" prefHeight="26.0" prefWidth="90.0" text="CHAITALY">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="taranga" layoutX="90.0" layoutY="265.0" mnemonicParsing="false" onAction="#taranga" prefHeight="26.0" prefWidth="90.0" text="TARANGA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="baishakhy" layoutX="90.0" layoutY="317.0" mnemonicParsing="false" onAction="#baishakhy" prefHeight="26.0" prefWidth="90.0" text="BAISHAKHY">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="ullash" layoutX="355.0" layoutY="103.0" mnemonicParsing="false" onAction="#ullash" prefHeight="26.0" prefWidth="90.0" text="ULLASH">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="srabon" layoutX="355.0" layoutY="157.0" mnemonicParsing="false" onAction="#srabon" prefHeight="26.0" prefWidth="90.0" text="SRABON">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="basanta" layoutX="355.0" layoutY="210.0" mnemonicParsing="false" onAction="#basanta" prefHeight="26.0" prefWidth="90.0" text="BASANTA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="kinchit" layoutX="355.0" layoutY="265.0" mnemonicParsing="false" onAction="#kinchit" prefHeight="26.0" prefWidth="90.0" text="KINCHIT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="moitri" layoutX="355.0" layoutY="317.0" mnemonicParsing="false" onAction="#moitri" prefHeight="26.0" prefWidth="90.0" text="MOITRI">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

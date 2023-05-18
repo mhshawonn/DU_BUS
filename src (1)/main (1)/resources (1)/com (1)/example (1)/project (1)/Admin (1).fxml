@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.Admin">
+   <children>
+      <AnchorPane prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: #002dfc;" AnchorPane.leftAnchor="0.0">
+         <children>
+            <ImageView fx:id="exit" fitHeight="18.0" fitWidth="32.0" layoutX="568.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/exit.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="drawerImage" fitHeight="18.0" fitWidth="32.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/menu.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane1" layoutY="34.0" prefHeight="366.0" prefWidth="50.0" style="-fx-background-color: #3359FF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <VBox layoutX="2.0" layoutY="44.0" prefHeight="214.0" prefWidth="50.0" spacing="20.0" style="-fx-background-color: #3359FF;" AnchorPane.leftAnchor="2.0">
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/172626_user_male_icon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/add1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/report1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="86.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/data1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" layoutX="53.0" layoutY="33.0" prefHeight="366.0" prefWidth="168.0" style="-fx-background-color: #3359FF;">
+         <children>
+            <VBox layoutX="7.0" layoutY="14.0" prefHeight="134.0" prefWidth="157.0">
+               <children>
+                  <ImageView fitHeight="125.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/172626_user_male_icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Label alignment="CENTER" layoutX="40.0" layoutY="146.0" prefHeight="42.0" prefWidth="92.0" text="HELLO!!" textAlignment="CENTER" textFill="#d94848">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="209.0" />
+            <Label alignment="CENTER" layoutX="40.0" layoutY="188.0" prefHeight="42.0" prefWidth="92.0" text="ADMIN" textAlignment="CENTER" textFill="#d94848">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="222.0" layoutY="32.0" prefHeight="366.0" prefWidth="377.0">
+         <children>
+            <Button fx:id="logout" layoutX="284.0" layoutY="325.0" mnemonicParsing="false" onAction="#Logout" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #82FF33; -fx-border-image-width: 0px 0px 2px 0px;" stylesheets="@style.css" text="LOGOUT">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <AnchorPane fx:id="bus1" layoutX="3.0" layoutY="7.0" onDragDetected="#Bus" onMouseClicked="#Driver" prefHeight="313.0" prefWidth="361.0">
+               <children>
+                  <Button fx:id="driver" layoutX="182.0" layoutY="91.0" mnemonicParsing="false" onAction="#Driver" prefHeight="34.0" prefWidth="62.0" text="Dirver" AnchorPane.leftAnchor="182.0" />
+                  <Button fx:id="bus" layoutX="195.0" layoutY="211.0" mnemonicParsing="false" onAction="#Bus" text="BUS" />
+                  <ImageView fx:id="BUS1" fitHeight="99.0" fitWidth="125.0" layoutX="34.0" layoutY="174.0" onMouseClicked="#BUS" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/bus.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="driverImg" fitHeight="99.0" fitWidth="118.0" layoutX="34.0" layoutY="59.0" onMouseClicked="#Driver1" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/driver.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="37.0" prefHeight="359.0" prefWidth="54.0" style="-fx-background-color: #3359FF;">
+         <children>
+            <VBox layoutX="2.0" layoutY="44.0" prefHeight="214.0" prefWidth="50.0" spacing="20.0" style="-fx-background-color: #3359FF;" AnchorPane.leftAnchor="2.0">
+               <children>
+                  <ImageView fx:id="profile" fitHeight="33.0" fitWidth="32.0" onMouseClicked="#Profile" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/172626_user_male_icon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/add1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/report1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="86.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/data1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
